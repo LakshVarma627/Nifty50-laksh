@@ -20,4 +20,3 @@ app.use("/api/sentiment", sentimentRoutes)
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
 })
-

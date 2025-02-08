@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ArrowUpRight, DollarSign, TrendingUp, BarChart2 } from "lucide-react"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
-import StockCard from "../components/StockCard"
+import StockCard from "../../components/StockCard"
 
 const portfolioData = [
   { date: "2023-01-01", value: 100000 },
@@ -100,4 +100,3 @@ export default function Dashboard() {
     </div>
   )
 }
-

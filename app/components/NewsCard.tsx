@@ -2,7 +2,7 @@
 
 import { Clock } from "lucide-react"
 import { useState, useEffect } from "react"
-import { getNewsSentiment } from "../services/api"
+import { getNewsSentiment } from "../../services/api"
 
 interface NewsCardProps {
   title: string
@@ -57,4 +57,3 @@ export default function NewsCard({ title, source, time, symbol }: NewsCardProps)
     </div>
   )
 }
-
