@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { ArrowUpRight } from "lucide-react"
-import { getStockData } from "../services/api"
+import { getStockData } from "../../services/api"
 
 interface StockCardProps {
   symbol: string
@@ -53,4 +53,3 @@ export default function StockCard({ symbol }: StockCardProps) {
     </div>
   )
 }
-

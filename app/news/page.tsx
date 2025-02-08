@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Search } from "lucide-react"
-import NewsCard from "../components/NewsCard"
+import NewsCard from "../../components/NewsCard"
 
 const initialNews = [
   {
@@ -77,7 +77,7 @@ export default function News() {
       <div className="space-y-6">
         {filteredNews.map((item) => (
           <div key={item.id} className="bg-white p-6 rounded-lg shadow-md">
-            <NewsCard title={item.title} source={item.source} time={item.time} />
+            <NewsCard title={item.title} source={item.source} time={item.time} symbol="NIFTY" />
             <p className="mt-2 text-gray-600">{item.content}</p>
           </div>
         ))}
@@ -85,4 +85,3 @@ export default function News() {
     </div>
   )
 }
-

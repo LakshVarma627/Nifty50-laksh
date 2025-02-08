@@ -2,7 +2,7 @@
 
 import { useState, type React } from "react"
 import { Plus, X } from "lucide-react"
-import StockCard from "../components/StockCard"
+import StockCard from "../../components/StockCard"
 
 const initialWatchlist = [
   { symbol: "TCS", name: "Tata Consultancy Services", price: 3456.75, change: 2.3 },
@@ -66,4 +66,3 @@ export default function Watchlist() {
     </div>
   )
 }
-

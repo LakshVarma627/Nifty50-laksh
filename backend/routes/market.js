@@ -17,4 +17,3 @@ router.get("/stock/:symbol", async (req, res) => {
 })
 
 module.exports = router
-

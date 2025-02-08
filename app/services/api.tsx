@@ -15,5 +15,8 @@ export const getForecast = (historicalData: number[]) => api.post("/predictions/
 
 export const getNewsSentiment = (symbol: string) => api.get(`/sentiment/news/${symbol}`)
 
-export default api
+export const login = (email: string, password: string) => api.post("/auth/login", { email, password })
 
+export const signup = (email: string, password: string) => api.post("/auth/signup", { email, password })
+
+export default api
