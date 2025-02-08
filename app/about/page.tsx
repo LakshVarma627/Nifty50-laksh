@@ -137,4 +137,3 @@ export default function StockDetailsPage({ params }: { params: { symbol: string 
   )
 }
 
-    
